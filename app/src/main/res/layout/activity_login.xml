@@ -15,10 +15,10 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Username:"
         android:textColor="#FFCC00"
-        app:layout_constraintStart_toEndOf="@+id/UsernameLoginView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/usernameLoginView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor" />
 
     <EditText
         android:id="@+id/passwordLoginBox"
@@ -28,13 +28,13 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="Password:"
         android:textColor="#DDCC00"
         app:layout_constraintStart_toEndOf="@+id/passwordLoginView"
-        app:layout_constraintTop_toBottomOf="@+id/usernameLoginBox" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameLoginBox"
+        tools:ignore="Autofill,LabelFor" />
 
     <TextView
-        android:id="@+id/UsernameLoginView"
+        android:id="@+id/usernameLoginView"
         android:layout_width="125dp"
         android:layout_height="48dp"
         android:layout_marginStart="30dp"
@@ -53,7 +53,7 @@
         android:text="Password:"
         android:textColor="#FFCC00"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UsernameLoginView" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameLoginView" />
 
     <Button
         android:id="@+id/loginButton"
@@ -63,6 +63,7 @@
         android:backgroundTint="#FFCC00"
         android:text="Log In!"
         android:textColor="#990000"
+        android:onClick="onClickLogIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordLoginBox"
@@ -76,10 +77,10 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Username:"
         android:textColor="#FFCC00"
         app:layout_constraintStart_toEndOf="@+id/usernameSignupView"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        tools:ignore="Autofill" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
@@ -89,7 +90,6 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Full Name:"
         android:textColor="#FFCC00"
         app:layout_constraintStart_toEndOf="@+id/fullNameSignupView"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
@@ -102,7 +102,6 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="Password:"
         android:textColor="#FFCC00"
         app:layout_constraintStart_toEndOf="@+id/passwordSignupView"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
@@ -115,7 +114,6 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="Email:"
         android:textColor="#FFCC00"
         app:layout_constraintStart_toEndOf="@+id/emailSignupView"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
@@ -128,7 +126,6 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:inputType="phone"
-        android:text="Phone Number:"
         android:textColor="#FFCC00"
         app:layout_constraintStart_toEndOf="@+id/phoneNumberSignupView"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />

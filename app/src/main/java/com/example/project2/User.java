@@ -14,7 +14,7 @@ public class User implements Serializable {
     private String username;
     private String password;
     private String profilePic;
-    private String[] otherInfo;
+    private String otherInfo;
     //private Event[] events;
 
     // constructor for temp user for logging in
@@ -39,7 +39,7 @@ public class User implements Serializable {
 
     // constructor for user from database info
     public User(String name, String email, String phone, String username,
-                String profilePic, String[] otherInfo) {
+                String profilePic, String otherInfo) {
         this.name = name;
         this.email = email;
         this.username = username;
@@ -54,7 +54,7 @@ public class User implements Serializable {
     public String getPhone() { return phone; }
     public String getUsername() { return username; }
     public String getProfilePic() { return profilePic; }
-    public String[] getOtherInfo() { return otherInfo; }
+    public String getOtherInfo() { return otherInfo; }
 
     public void setName(String name) { this.name = name; }
     public void setEmail(String email) { this.email = email; }
@@ -70,7 +70,7 @@ public class User implements Serializable {
         }
     }
     public void setProfilePic(String profilePic) { this.profilePic = profilePic; }
-    public void setOtherInfo(String[] otherInfo) { this.otherInfo = otherInfo; }
+    public void setOtherInfo(String otherInfo) { this.otherInfo = otherInfo; }
 
     public int validate() {
         // SEARCH DB FOR USERNAME

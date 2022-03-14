@@ -27,27 +27,20 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     protected void displayProfile(View view) {
-//        TextView name = findViewById(R.id.name);
-//        name.setText(user.getName());
-//        TextView userID = findViewById(R.id.userID);
-//        userID.setText(user.getUserID());
-//        TextView username = findViewById(R.id.username);
-//        username.setText(user.getUsername());
-//        TextView email = findViewById(R.id.email);
-//        email.setText(user.getEmail());
-//        TextView phone = findViewById(R.id.phone);
-//        phone.setText(user.getPhone());
-//        ImageView profilePic = (ImageView)findViewById(R.id.profilePic);
-//        Uri profilePicUri = Uri.parse(user.getProfilePic());
-//        Bitmap profilePicBitmap = null;
-//        try {
-//            profilePicBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), profilePicUri);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        if (profilePicBitmap != null) {
-//            profilePic.setImageBitmap(profilePicBitmap);
-//        }
+//        TextView nameView = findViewById(R.id.name);
+//        nameView.setText(user.getName());
+//        TextView userIDView = findViewById(R.id.userID);
+//        userIDView.setText(user.getUserID());
+//        TextView usernameView = findViewById(R.id.username);
+//        usernameView.setText(user.getUsername());
+//        TextView emailView = findViewById(R.id.email);
+//        emailView.setText(user.getEmail());
+//        TextView phoneView = findViewById(R.id.phone);
+//        phoneView.setText(user.getPhone());
+//        ImageView profilePicView = (ImageView)findViewById(R.id.profilePic);
+//        profilePicView.setImageURI(Uri.parse(user.getProfilePic()));
+//        TextView otherInfoView = findViewById(R.id.otherInfo);
+//        otherInfoView.setText(user.getOtherInfo());
     }
 
     public void onClickEditProfile(View view) {
