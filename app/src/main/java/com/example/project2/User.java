@@ -1,10 +1,11 @@
 package com.example.project2;
 
+import java.io.Serializable;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 
-public class User {
+public class User implements Serializable {
 
     private int userID;
     private String name;
@@ -16,6 +17,13 @@ public class User {
     private String[] otherInfo;
     //private Event[] events;
 
+    // constructor for temp user for logging in
+    public User(String username, String password) {
+        this.username = username;
+        this.password = hash(password);
+    }
+
+    // constructor for basic user with minimal info (sign up)
     public User(String name, String email, String username, String password) {
         this.name = name;
         this.email = email;
@@ -27,6 +35,17 @@ public class User {
         else {
             // ERROR
         }
+    }
+
+    // constructor for user from database info
+    public User(String name, String email, String phone, String username,
+                String profilePic, String[] otherInfo) {
+        this.name = name;
+        this.email = email;
+        this.username = username;
+        this.phone = phone.length() == 0 ? null : phone;
+        this.profilePic = profilePic.length() == 0 ? null : profilePic;
+        this.otherInfo = otherInfo;
     }
 
     public int getUserID() { return userID; }
@@ -53,11 +72,12 @@ public class User {
     public void setProfilePic(String profilePic) { this.profilePic = profilePic; }
     public void setOtherInfo(String[] otherInfo) { this.otherInfo = otherInfo; }
 
-    public Boolean validate(String username, String password) {
+    public int validate() {
         // SEARCH DB FOR USERNAME
         // CHECK THAT HASHED PW MATCHES DB PASSWORD
-        return true;
-        //OTHERWISE RETURN FALSE
+        // RETURN USER ID IF FOUND
+        return 1;
+        //OTHERWISE RETURN -1
     }
 
     private String hash(String password) {

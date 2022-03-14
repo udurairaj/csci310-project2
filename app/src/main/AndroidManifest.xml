@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project2">
         <activity
-            android:name=".MainActivity"
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Feature3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Feature2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Feature1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
