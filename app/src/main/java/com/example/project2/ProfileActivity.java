@@ -27,16 +27,16 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     protected void displayProfile(View view) {
-        TextView name = findViewById(R.id.name);
-        name.setText(user.getName());
-        TextView userID = findViewById(R.id.userID);
-        userID.setText(user.getUserID());
-        TextView username = findViewById(R.id.username);
-        username.setText(user.getUsername());
-        TextView email = findViewById(R.id.email);
-        email.setText(user.getEmail());
-        TextView phone = findViewById(R.id.phone);
-        phone.setText(user.getPhone());
+//        TextView name = findViewById(R.id.name);
+//        name.setText(user.getName());
+//        TextView userID = findViewById(R.id.userID);
+//        userID.setText(user.getUserID());
+//        TextView username = findViewById(R.id.username);
+//        username.setText(user.getUsername());
+//        TextView email = findViewById(R.id.email);
+//        email.setText(user.getEmail());
+//        TextView phone = findViewById(R.id.phone);
+//        phone.setText(user.getPhone());
 //        ImageView profilePic = (ImageView)findViewById(R.id.profilePic);
 //        Uri profilePicUri = Uri.parse(user.getProfilePic());
 //        Bitmap profilePicBitmap = null;
