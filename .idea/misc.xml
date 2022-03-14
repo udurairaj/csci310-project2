@@ -3,14 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/phill/StudioProjects/csci310-project2/app/src/main/res/layout/activity_feature1.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/phill/StudioProjects/csci310-project2/app/src/main/res/layout/activity_feature2.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/phill/StudioProjects/csci310-project2/app/src/main/res/layout/activity_login.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/phill/StudioProjects/csci310-project2/app/src/main/res/layout/activity_profile.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/phill/StudioProjects/csci310-project2/app/src/main/res/layout/activity_profile_view.xml" value="0.5541666666666667" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/ic_camera_default.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.147" />
-        <entry key="app/src/main/res/layout/activity_edit_profile.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/activity_feature1.xml" value="0.13697916666666668" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_photo.xml" value="0.13697916666666668" />
-        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.28229166666666666" />
       </map>
     </option>
   </component>
