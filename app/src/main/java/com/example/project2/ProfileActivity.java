@@ -50,14 +50,10 @@ public class ProfileActivity extends AppCompatActivity {
 //        }
     }
 
-//    public void onClickEditProfile(View view) {
-//
-//    }
-//
-//    public void onClickSetProfilePic(View View) {
-//        Intent photoSelectIntent = new Intent(Intent.ACTION_GET_CONTENT, null);
-//        photoSelectIntent.setType("image/*");
-//
-//    }
+    public void onClickEditProfile(View view) {
+        Intent i = new Intent(ProfileActivity.this, EditProfileActivity.class);
+        startActivity(i);
+        i.putExtra("user", user);
+    }
 
 }
