@@ -5,7 +5,7 @@ public class Location
     private String name;
     private float latitude;
     private float longitude;
-    //private Event[] events;
+    private Event[] events;
 
     public Location(String name, float latitude, float longitude)
     {
@@ -29,10 +29,10 @@ public class Location
         return longitude;
     }
 
-//    public Event[] getEvents()
-//    {
-//        return events;
-//    }
+    public Event[] getEvents()
+    {
+        return events;
+    }
 
     public void setName(String str)
     {

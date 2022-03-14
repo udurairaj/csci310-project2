@@ -28,6 +28,9 @@ public class User implements Serializable {
         this.name = name;
         this.email = email;
         this.username = username;
+        this.phone = null;
+        this.profilePic = null;
+        this.otherInfo = null;
         this.password = hash(password);
         if (this.password != null) {
             // ADD USER TO DB
