@@ -15,7 +15,7 @@ public class User implements Serializable {
     private String password;
     private String profilePic;
     private String otherInfo;
-    //private Event[] events;
+    private Event[] events;
 
     // constructor for temp user for logging in
     public User(String username, String password) {
@@ -50,6 +50,9 @@ public class User implements Serializable {
         this.profilePic = profilePic.length() == 0 ? null : profilePic;
         this.otherInfo = otherInfo;
     }
+
+    public void setUserID(int userID) { this.userID = userID; }
+
 
     public int getUserID() { return userID; }
     public String getName() { return name; }

@@ -4,7 +4,9 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
 
-public class NotificationHandler {
+import java.io.Serializable;
+
+public class NotificationHandler implements Serializable {
 
     private NotificationChannel channel = null;
     private NotificationManager manager = null;

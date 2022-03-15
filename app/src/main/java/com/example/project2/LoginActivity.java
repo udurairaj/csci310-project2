@@ -39,9 +39,9 @@ public class LoginActivity extends AppCompatActivity {
         if (valid >= 0 && successLogin) {
             //User u = null;
             // u = DATABASE FUNCTION TO GET USER FROM USERID
-            Intent i = new Intent(LoginActivity.this, ProfileActivity.class);
-            startActivity(i);
+            Intent i = new Intent(getApplicationContext(), ProfileActivity.class);
             //i.putExtra("user", u);
+            startActivity(i);
         }
         else {
             AlertDialog.Builder loginFail = new AlertDialog.Builder(this);
@@ -91,8 +91,8 @@ public class LoginActivity extends AppCompatActivity {
             // ADD USER TO DATABASE AND GET USER ID
             // User u = GET USER FROM DB BY USER ID
             Intent i = new Intent(LoginActivity.this, ProfileActivity.class);
-            startActivity(i);
             //i.putExtra("user", u);
+            startActivity(i);
         }
         else {
             AlertDialog.Builder loginFail = new AlertDialog.Builder(this);

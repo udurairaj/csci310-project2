@@ -1,6 +1,8 @@
 package com.example.project2;
 
-public class TimeSlot
+import java.io.Serializable;
+
+public class TimeSlot implements Serializable
 {
     // data members
     private int startTime;

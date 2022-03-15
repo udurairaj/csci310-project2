@@ -1,8 +1,9 @@
 package com.example.project2;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Event {
+public class Event implements Serializable {
 
     private int eventID;
     private User owner;
@@ -11,7 +12,7 @@ public class Event {
     private String description;
     private ArrayList<User> participants;
     private ArrayList<TimeSlot> timeOptions;
-    //private NotificationHandler notificationHandler;
+    private NotificationHandler notificationHandler;
     private Location location;
     private TimeSlot finalTime;
     private TimeGenerator generator;

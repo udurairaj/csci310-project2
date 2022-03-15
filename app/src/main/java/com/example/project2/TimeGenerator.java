@@ -1,6 +1,8 @@
 package com.example.project2;
 
-public class TimeGenerator
+import java.io.Serializable;
+
+public class TimeGenerator implements Serializable
 {
     private TimeSlot[] timeSlots;
     private Event event;

@@ -1,6 +1,8 @@
 package com.example.project2;
 
-public class Location
+import java.io.Serializable;
+
+public class Location implements Serializable
 {
     private String name;
     private float latitude;
