@@ -41,6 +41,7 @@ public class Event implements Serializable {
     public Location getLocation() { return location; }
     public TimeSlot getFinalTime() { return finalTime; }
 
+    public void setEventID(int eventID) { this.eventID = eventID; }
     public void setEventName(String eventName) { this.eventName = eventName; }
     public void setStatusPublic(Boolean statusPublic) { this.statusPublic = statusPublic; }
     public void setDescription(String description) { this.description = description; }
