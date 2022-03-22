@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -22,6 +23,15 @@ public class LoginActivity extends AppCompatActivity {
 
     // Call when login button gets clicked
     public void onClickLogIn(View view) {
+        UserTable userTable = new UserTable();
+        User temp = new User("test", "test2");
+        userTable.addUser(temp);
+        User returned = userTable.getUser(1);
+        Log.i("USER", returned.getUsername());
+        temp.setUsername("change");
+        userTable.editUser(temp);
+        returned = userTable.getUser(1);
+        Log.i("USER", returned.getUsername());
         EditText usernameField = (EditText)findViewById(R.id.usernameLoginBox);
         EditText passwordField = (EditText)findViewById(R.id.passwordLoginBox);
         String username = usernameField.getText().toString();
@@ -50,6 +60,7 @@ public class LoginActivity extends AppCompatActivity {
             loginFail.setPositiveButton("Close", null);
             loginFail.create().show();
         }
+
         successLogin = true; // reset success flag
     }
 

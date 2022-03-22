@@ -17,6 +17,9 @@ public class User implements Serializable {
     private String otherInfo;
     private Event[] events;
 
+    public User() {
+
+    }
     // constructor for temp user for logging in
     public User(String username, String password) {
         this.username = username;
