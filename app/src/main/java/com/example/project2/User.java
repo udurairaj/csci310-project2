@@ -15,7 +15,7 @@ public class User implements Serializable {
     private String password;
     private String profilePic;
     private String otherInfo;
-    private Event[] events;
+    private int[] events;
 
     public User() {
 
